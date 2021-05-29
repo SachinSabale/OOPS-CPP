@@ -1,0 +1,33 @@
+//Hybrid Inheritance
+
+#include <iostream>
+using namespace std;
+class Vehicle
+{
+ public:
+ Vehicle()
+ {
+cout<< "This is a Vehicle"<<endl;
+}
+};
+ class Fare
+{
+ public:
+ Fare()
+{
+cout<<"Fare of Vehicle\n";
+}
+};
+class Car: public Vehicle
+{
+};
+class Bus: public Vehicle, public Fare
+{
+};
+
+int main()
+{
+Bus obj;
+return(0);
+};
+
